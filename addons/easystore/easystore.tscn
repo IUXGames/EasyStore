@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://easystore_main"]
+
+[ext_resource type="Script" path="res://addons/easystore/easystore.gd" id="1"]
+[ext_resource type="Script" path="res://addons/easystore/core/store_events.gd" id="2"]
+[ext_resource type="Script" path="res://addons/easystore/subsystems/slot_manager.gd" id="3"]
+[ext_resource type="Script" path="res://addons/easystore/subsystems/section_cache.gd" id="4"]
+[ext_resource type="Script" path="res://addons/easystore/subsystems/autosave_timer.gd" id="5"]
+[ext_resource type="Script" path="res://addons/easystore/subsystems/migration_manager.gd" id="6"]
+[ext_resource type="Script" path="res://addons/easystore/subsystems/sync_manager.gd" id="7"]
+[ext_resource type="Script" path="res://addons/easystore/subsystems/async_worker.gd" id="8"]
+[ext_resource type="Script" path="res://addons/easystore/debug/store_logger.gd" id="9"]
+[ext_resource type="Script" path="res://addons/easystore/debug/store_debugger.gd" id="10"]
+
+[node name="EasyStore" type="Node"]
+script = ExtResource("1")
+
+[node name="StoreEvents" type="Node" parent="."]
+script = ExtResource("2")
+
+[node name="SlotManager" type="Node" parent="."]
+script = ExtResource("3")
+
+[node name="SectionCache" type="Node" parent="."]
+script = ExtResource("4")
+
+[node name="AutosaveTimer" type="Node" parent="."]
+script = ExtResource("5")
+
+[node name="MigrationManager" type="Node" parent="."]
+script = ExtResource("6")
+
+[node name="SyncManager" type="Node" parent="."]
+script = ExtResource("7")
+
+[node name="AsyncWorker" type="Node" parent="."]
+script = ExtResource("8")
+
+[node name="StoreLogger" type="Node" parent="."]
+script = ExtResource("9")
+
+[node name="StoreDebugger" type="Node" parent="."]
+script = ExtResource("10")
